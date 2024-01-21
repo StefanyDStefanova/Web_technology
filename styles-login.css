@@ -19,12 +19,14 @@
 }
 
 .toggle-btn {
-	padding:  10px 30px;
+	padding:  10px 25px;
 	cursor: pointer;
 	background: transparent;
 	border: 0;
 	outline: none;
 	position: relative;
+	color: #73566a;
+    font-weight: 600;
 }
 
 #btn {
@@ -74,6 +76,14 @@
 	border: 0;
 	outline: none;
 	border-radius: 30px;
+	text-align: center;
+	justify-content: center;
+	color: #73566a;
+    font-weight: 600;
+}
+
+.submit-btn:hover {
+	color: #b39dac;
 }
 
 .check-box {
@@ -81,7 +91,7 @@
 }
 
 span {
-	color:#777;
+	color:#999;
 	font-size: 12px;
 	bottom: 68px;
 	position: absolute;
@@ -93,7 +103,7 @@ span {
 
 #login input,
 #register input  {
-	color: white;
+	color: #400b30;
 	font-size: 15px;
 }
 
@@ -123,3 +133,8 @@ span {
   display: inline-block;
   margin: 0 auto;
 }
+
+a {
+	text-decoration: none;
+}
+
