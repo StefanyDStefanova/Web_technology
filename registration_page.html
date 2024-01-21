@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Регистрация в Алумни клуба" />
+
+	<title>Регистрация</title>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="script.js"></script>
+
+
+</head>
+<body>
+<form action="process_form.php" method="post" id="myForm" onsubmit="return validateForm()">
+
+        <label for="username">Потребителско име:</label>
+        <input type="text" id="username" name="username" required minlength="3" maxlength="10">
+
+        <label for="password">Парола:</label>
+        <input type="password" id="password" name="password" required minlength="6" maxlength="10" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).*$">
+
+        <label for="email">Мейл:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="first-name">Име:</label>
+        <input type="text" id="first-name" name="first-name" required maxlength="50">
+
+        <label for="second-name">Фамилия:</label>
+        <input type="text" id="second-name" name="second-name" required maxlength="50">
+
+
+				<input type="text" id="second-name" name="second-name" placeholder="Поток:" required=""><br>
+
+				<input type="text" id="second-name" name="second-name" placeholder="Група:" required=""><br>
+
+				<input type="text" id="second-name" name="second-name" placeholder="Факултетен номер:" required=""><br>
+
+        <select id="choice" name="choice">
+            <option value="kn">Компютърни науки</option>
+            <option value="i">Информатика</option>
+            <option value="is">Информационни Системи</option>
+            <option value="m">Математика и информатика</option>
+            <option value="stat">Статистика</option>
+            <option value="pm">Приложна математика</option>
+            <option value="si">Софтуерно инженерство</option>
+        </select><br>
+
+        <input type="button" class="submit-button" value="Регистрирай се" onclick="sendForm()">
+</form>
+
+</body>
+</html>
