@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100hv;
+  min-height: 100vh;
   background-color: #010a01;
 }
 
@@ -93,7 +93,8 @@ h1 {
   font-weight: 400;
   line-height: 1;
   font-size: 6.2rem;
-  animation: pulsate 0.11s ease-in-out infinite alternate;   
+  animation: pulsate 0.11s ease-in-out infinite alternate;
+  margin-left: 55vh;
 }
 
 .container {
