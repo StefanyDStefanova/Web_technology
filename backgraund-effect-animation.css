@@ -4,13 +4,13 @@ html, body {
 }
 
 :root {
-	--color-bg1: rgb(71, 9, 69);
-	--color-bg2: rgb(7, 89, 92);
+	--color-bg1: rgb(147, 26, 150);
+	--color-bg2: rgb(18, 46, 79);
 	--color1: 18, 113, 255;
 	--color2: 221, 74, 255;
 	--color3: 100, 220, 255;
 	--color4: 200, 50, 50;
-	--color5: 180, 180, 50;
+	--color5: 217, 149, 67;
 	--color-interactive: 140, 100, 255;
 	--circle-size: 70%;
 	--blending: hard-light;
