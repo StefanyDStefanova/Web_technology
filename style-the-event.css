@@ -1,0 +1,132 @@
+.header {
+	margin: 0;
+	padding: 0;
+}
+
+.header .img-parent {
+	position: relative;
+}
+
+.header img {
+	max-height: 100%;
+	width: 100%;
+	margin-top: 76px;
+}
+
+.header .img-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 80%;
+	width: 100%;
+	background: #000;
+	z-index: 2;
+	opacity: 0.5;
+	margin-top: 76px;
+}
+
+.header .img-content {
+	position: relative;
+	margin-top: -200px;
+	margin-bottom: 120px;
+	z-index: 3;
+	color: #fff;
+	text-align: center;
+	justify-content: center;
+}
+
+.header .img-content h1 {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 5rem;
+}
+
+.discount-container {
+	color: #fff;
+	position: relative;
+	top: 70%;
+	left: 0;
+	display: flex;
+	gap: 30px;
+	justify-content: center;
+	width: 100%;
+	text-align: center;
+	align-items: center;
+}
+
+.discount-heading {
+	position: relative;
+	justify-content: center;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	margin: 20px 0;
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+.discount-container .countdown-timer {
+	display: flex;
+	gap: 16px;
+}
+
+.countdown-timer .group {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+}
+
+.countdown-timer .value {
+	background: #fff;
+	color:#222;
+	font-size: 3.3rem;
+	font-weight: bold;
+	padding: 16px;
+	width: 86px;
+	text-align: center;
+	border-radius: 4px;
+}
+
+.countdown-timer .unit {
+	font-size: 1.3rem;
+
+}
+
+.info-container {
+	margin-top: 70px;
+}
+
+.info-container h2 {
+	font-size: 1.3rem;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	color: #fff;
+}
+
+.info-container .row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+}
+
+
+
+.text {
+    display: flex;
+    padding: 1rem;
+    margin: 20px ;
+    color: #fff;
+    font-size: 16px;
+}
+
+.info-container a {
+	text-decoration: none;
+	padding: 10px 20px;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	background-image: linear-gradient(#033747, #012733);
+	color: #fff;
+}
