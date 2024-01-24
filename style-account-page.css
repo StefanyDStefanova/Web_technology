@@ -271,3 +271,20 @@ h3 {
     border-radius: 50%;
 }
 
+.nav-bar .account img,
+.nav-bar .account i {
+    float: right;
+    cursor: pointer;
+    margin: 14px 0;
+    border-radius: 50%;
+}
+
+.nav-bar .account i {
+    color:#fff;
+    float: right;
+    cursor: pointer;
+    max-height: 48px;
+    margin: 30px;
+}
+
+

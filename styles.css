@@ -49,11 +49,20 @@ nav li a:hover {
     transition: all 0.4s ease 0s;
 }
 
-nav .account img {
+nav .account img,
+nav .account i {
     float: right;
     cursor: pointer;
     margin: 14px 0;
     border-radius: 50%;
+}
+
+nav .account i {
+    color:#fff;
+    float: right;
+    cursor: pointer;
+    max-height: 48px;
+    margin: 30px;
 }
 
 
