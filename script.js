@@ -1,8 +1,11 @@
+/*Logout mess*/
+
 function showMessage() {
       alert('Сигурни ли сте, че искате да илезете от профила си?'); 
 }
 
 
+/*Downtimer, event-page*/
  const countDownDate = new Date("Feb 9, 2024 00:00:00").getTime();
 
     const countdown = setInterval(function() {
@@ -26,17 +29,19 @@ function showMessage() {
       }
 }, 1000);
 
+/*To hide the text, event-page*/
+
 let lastScrollPosition = window.scrollY;
 
     window.addEventListener('scroll', function () {
       const currentScrollPosition = window.scrollY;
 
       if (currentScrollPosition > lastScrollPosition) {
-        // Скролираме надолу
+
         const fadeOutText = document.getElementById('scroll-counter');
         fadeOutText.classList.add('hidden');
       } else {
-        // Скролираме нагоре
+
         const fadeOutText = document.getElementById('scroll-counter');
         fadeOutText.classList.remove('hidden');
       }
@@ -44,15 +49,51 @@ let lastScrollPosition = window.scrollY;
       lastScrollPosition = currentScrollPosition;
 });
 
-
+/*Home page popup*/
 window.onload = function() {
-            setTimeout(showPopup, 2000);
+            setTimeout(showPopupHome, 2000);
         };
 
-        function showPopup() {
+        function showPopupHome() {
             document.getElementById('popup').style.display = 'block';
         }
 
-        function closePopup() {
+        function closePopupHome() {
             document.getElementById('popup').style.display = 'none';
+}
+
+
+/*popup with "write a mess"*/
+
+function showMessageWrite() {
+    document.getElementById('messagePopup').style.display = 'block';
+}
+
+function sendMessage() {
+    var message = document.getElementById('messageTextarea').value;
+    alert('Изпратено съобщение: ' + message);
+
+    closePopup();
+}
+
+function closePopup() {
+    document.getElementById('messagePopup').style.display = 'none';
+}
+
+
+/* Change your pass*/
+
+function showEditPopup() {
+    document.getElementById('editPopup').style.display = 'block';
+}
+
+function saveChanges() {
+    var newUsername = document.getElementById('newUsername').value;
+    var newPassword = document.getElementById('newPassword').value;
+
+    closeEditPopup();
+}
+
+function closeEditPopup() {
+    document.getElementById('editPopup').style.display = 'none';
 }

@@ -4,6 +4,7 @@ body {
 	padding: 0;
 	box-sizing:border-box ;
 	min-height: 100vh;
+    background-image: linear-gradient(#2a660e, #82ab92);
 }
 
 ul {
@@ -117,6 +118,14 @@ h3 {
 	font-size: 1.3rem;
 }
 
+.account-header-wapper .account-cols-container .account-content ul li a {
+	color: #1c1f1c;
+}
+
+.account-header-wapper .account-cols-container .account-content ul li a:hover {
+	color:#fff;
+}
+
 .account-header-wapper .account-cols-container .account-right-col nav {
 	display: flex;
 	align-items: center;
@@ -136,17 +145,29 @@ h3 {
 	color:#f1f7f0;
 }
 
-.account-header-wapper .account-cols-container .account-right-col nav button {
-	background: #0091ff;
-	color:#fff;
-	border: none;
+.account-header-wapper .account-cols-container .account-right-col nav button,
+.account-header-wapper .account-cols-container .account-content button {
+	background: #1c1f1c;
+    color: #f1f7f0;
+   	border: none;
 	padding: 10px 25px;
 	border-radius: 4px;
-	cursor: pointer;
+	cursor: pointer !important;
 	margin-top: 20px;
 }
 
+.account-header-wapper .account-cols-container .account-right-col nav button:hover,
+.account-header-wapper .account-cols-container .account-content button:hover {
+	color: #1c1f1c;
+    background: #f1f7f0;
+}
+
 .account-header-wapper .account-cols-container .account-right-col nav ul li:nth-child(1) a {
+	color: #1d1d1d;
+	font-weight: 600;
+}
+
+.account-header-wapper .account-cols-container .account-right-col nav ul li a:hover {
 	color: #1d1d1d;
 	font-weight: 600;
 }
@@ -287,4 +308,55 @@ h3 {
     margin: 30px;
 }
 
+/* ПОПЪП */
 
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px; 
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 999;
+}
+
+.popup textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.popup button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #460154;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.popup button:hover {
+    background: #75018c;
+}
+
+.popup input {
+	min-height: 40px;
+	width: 100%;
+	margin: 10px 0;
+	padding: 0 10px;
+}
+
+.popup h2 {
+	text-align: center;
+	justify-content: center;
+}

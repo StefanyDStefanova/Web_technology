@@ -223,3 +223,59 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+
+/*Home page*/
+
+.home {
+    text-align: center;
+    padding-top: 6rem;
+    margin: 0 auto;
+    max-width: 70rem;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.home h3 {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 5rem;
+    z-index: 1;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* кутии */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px 100px;
+}
+
+.grid-item {
+    text-align: center;
+    padding: 20px;
+    background: #fff;   
+    border-radius: 10px;
+}
+
+.icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.grid-container .grid-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #460154;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.grid-container .grid-item a:hover {
+    background: #75018c;
+}

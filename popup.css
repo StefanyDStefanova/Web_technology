@@ -10,6 +10,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	
 }
 
 .contentBox {
@@ -19,7 +20,7 @@
 	background: #fdfdf3;
 	border-radius: 20px;
 	display: flex;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 1);	
 }
 
 .contentBox .imgBx {
